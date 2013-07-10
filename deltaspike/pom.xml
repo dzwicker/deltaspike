@@ -131,6 +131,27 @@
                 </plugins>
             </build>
         </profile>
+        <profile>
+            <id>in2ex</id>
+            <distributionManagement>
+                <repository>
+                    <id>in2ex-releases</id>
+                    <name>In2Experience Snapshot Repository</name>
+                    <url>http://dev.in2experience.com/nexus/content/repositories/releases/</url>
+                    <uniqueVersion>true</uniqueVersion>
+                </repository>
+                <snapshotRepository>
+                    <id>in2ex-snapshots</id>
+                    <name>In2Experience Snapshot Repository</name>
+                    <url>http://dev.in2experience.com/nexus/content/repositories/snapshots/</url>
+                    <uniqueVersion>true</uniqueVersion>
+                </snapshotRepository>
+                <site>
+                    <id>dev.in2experience.com</id>
+                    <url>scp://dev.in2experience.com/var/www/dev.in2experience.com/invex/rom</url>
+                </site>
+            </distributionManagement>
+        </profile>
     </profiles>
 
 </project>
